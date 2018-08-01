@@ -13,8 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -24,8 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email" />
+        android:hint="Email"/>
 
     <EditText
         android:id="@+id/etNumber"
@@ -35,8 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="49dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Number" />
+        android:hint="Number" />
 
     <Button
         android:id="@+id/SAVE"

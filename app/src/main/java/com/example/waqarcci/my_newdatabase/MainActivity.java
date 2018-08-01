@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
     DatabaseHelper databaseHelper;
 
     Button insert;
+    Button searchData;
+    Button btUpdate;
+    Button btnDelete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +32,40 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(AddActivity);
             }
         });
+        searchData = (Button) findViewById(R.id.btSerach);
+
+        searchData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentSearch = new Intent(MainActivity.this,Search_Activity.class);
+                startActivity(intentSearch);
+
+            }
+        });
+
+        btUpdate= (Button) findViewById(R.id.btupdate);
+
+        btUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentUpdate = new Intent(MainActivity.this,Update_Activity.class);
+                startActivity(intentUpdate);
+            }
+        });
+
+
+
+
+        btnDelete = (Button) findViewById(R.id.btDelete);
+
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Delete_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
